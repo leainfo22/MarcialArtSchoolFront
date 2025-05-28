@@ -23,10 +23,10 @@ const Login: React.FC = () => {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h2 className="login-title">Sign in to Martial Art School</h2>
+        <h2 className="login-title">Martial Art School</h2>
         <form className="login-form" onSubmit={handleLogin}>
           <div>
-            <label className="login-label" htmlFor="username">Username</label>
+            <label className="login-label" htmlFor="username">Username </label>
             <input
               className="login-input"
               id="username"
@@ -39,7 +39,7 @@ const Login: React.FC = () => {
             />
           </div>
           <div>
-            <label className="login-label" htmlFor="password">Password</label>
+            <label className="login-label" htmlFor="password">Password </label>
             <input
               className="login-input"
               id="password"
