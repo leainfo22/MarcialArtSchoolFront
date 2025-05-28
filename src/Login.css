@@ -1,0 +1,105 @@
+/* Login.css */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #764ba2;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.login-card {
+  background: #fff;
+  padding: 3rem 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.login-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #4f46e5;
+  margin-bottom: 2rem;
+  letter-spacing: -1px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.login-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.login-input {
+  padding: 0.9rem 1.1rem;
+  border: 1.5px solid #e0e7ff;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  background: #f8fafc;
+  color: #222;
+  transition: border 0.2s;
+}
+.login-input:focus {
+  border-color: #6366f1;
+  outline: none;
+  background: #fff;
+}
+
+.login-error {
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 0.6rem;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  font-size: 0.98rem;
+}
+
+.login-button {
+  background: linear-gradient(90deg, #6366f1 0%, #7c3aed 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.95rem 0;
+  border: none;
+  border-radius: 0.8rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(99, 102, 241, 0.08);
+  transition: background 0.2s, transform 0.15s;
+}
+.login-button:hover {
+  background: linear-gradient(90deg, #7c3aed 0%, #6366f1 100%);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.login-signup {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.98rem;
+  margin-top: 2rem;
+}
+.login-signup a {
+  color: #6366f1;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.login-signup a:hover {
+  color: #7c3aed;
+}
